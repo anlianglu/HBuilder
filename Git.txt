@@ -1,69 +1,68 @@
 git@github.com:zhan520/HBuilder.git
 -----------------------------------------------------------------------------------------------------------
-£¨Ò»£©¼ì²é  ssh-key
-       cd ~/.ssh (ÌáÊ¾No such file or directory Ôò±íÊ¾Ã»ÓĞkey)
+ï¼ˆä¸€ï¼‰æ£€æŸ¥  ssh-key
+       cd ~/.ssh (æç¤ºNo such file or directory åˆ™è¡¨ç¤ºæ²¡æœ‰key)
 -----------------------------------------------------------------------------------------------------------
-£¨¶ş£©Éú³ÉĞÂµÄssh key¡£
-      ssh-keygen -t rsa -C "xxxxxx@yy.com"  ×Ô¼ºÕæÊµÓÊÏä Ò»Â·»Ø³µ
-      Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   #Éú³ÉµÄÃÜÔ¿
-      Your public key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  #Éú³ÉµÄ¹«Ô¿
-      *±¾»úÒÑÍê³Éssh keyÉèÖÃ£¬Æä´æ·ÅÂ·¾¶Îª£ºc:/Users/xxxx_000/.ssh/ÏÂ¡£
+ï¼ˆäºŒï¼‰ç”Ÿæˆæ–°çš„ssh keyã€‚
+      ssh-keygen -t rsa -C "xxxxxx@yy.com"  è‡ªå·±çœŸå®é‚®ç®± ä¸€è·¯å›è½¦
+      Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   #ç”Ÿæˆçš„å¯†é’¥
+      Your public key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  #ç”Ÿæˆçš„å…¬é’¥
+      *æœ¬æœºå·²å®Œæˆssh keyè®¾ç½®ï¼Œå…¶å­˜æ”¾è·¯å¾„ä¸ºï¼šc:/Users/xxxx_000/.ssh/ä¸‹ã€‚
 -----------------------------------------------------------------------------------------------------------
- (Èı)  Ìí¼Óssh keyµ½GItHub
-       µÇÂ¼GitHubÏµÍ³£»µã»÷ÓÒÉÏ½ÇÕËºÅÍ·ÏñµÄ¡°¨‹¡±¡úSettings¡úSSH kyes¡úAdd SSH key¡£
-       ½øÈëc:/Users/xxxx_000/.ssh/Ä¿Â¼ÏÂ£¬´ò¿ªid_rsa.pubÎÄ¼ş£¬È«Ñ¡¸´ÖÆ¹«Ô¿ÄÚÈİ¡£
-       Title×Ô¶¨Òå£¬½«¹«Ô¿Õ³Ìùµ½GitHubÖĞAdd an SSH keyµÄkeyÊäÈë¿ò£¬×îºó¡°Add Key¡±¡£
+ (ä¸‰)  æ·»åŠ ssh keyåˆ°GItHub
+       ç™»å½•GitHubç³»ç»Ÿï¼›ç‚¹å‡»å³ä¸Šè§’è´¦å·å¤´åƒçš„â€œâ–¼â€â†’Settingsâ†’SSH kyesâ†’Add SSH keyã€‚
+       è¿›å…¥c:/Users/xxxx_000/.ssh/ç›®å½•ä¸‹ï¼Œæ‰“å¼€id_rsa.pubæ–‡ä»¶ï¼Œå…¨é€‰å¤åˆ¶å…¬é’¥å†…å®¹ã€‚
+       Titleè‡ªå®šä¹‰ï¼Œå°†å…¬é’¥ç²˜è´´åˆ°GitHubä¸­Add an SSH keyçš„keyè¾“å…¥æ¡†ï¼Œæœ€åâ€œAdd Keyâ€ã€‚
 -----------------------------------------------------------------------------------------------------------
 	   
-£¨ËÄ£©ÅäÖÃÕË»§
-      git config --global user.name ¡°your_username¡±  #ÉèÖÃÓÃ»§Ãû
-      git config --global user.email ¡°your_registered_github_Email¡±  #ÉèÖÃÓÊÏäµØÖ·(½¨ÒéÓÃ×¢²ágiuhubµÄÓÊÏä
+ï¼ˆå››ï¼‰é…ç½®è´¦æˆ·
+      git config --global user.name â€œyour_usernameâ€  #è®¾ç½®ç”¨æˆ·å
+      git config --global user.email â€œyour_registered_github_Emailâ€  #è®¾ç½®é‚®ç®±åœ°å€(å»ºè®®ç”¨æ³¨å†Œgiuhubçš„é‚®ç®±
 	-----------------------------------------------------------------------------------------------------------  
 	  
-£¨Îå£©²âÊÔssh keysÊÇ·ñÉèÖÃ³É¹¦  Ò»Â·»Ø³µ°É£¨Ç°ÃæË½Ô¿²»ÒªÉèÖÃÃÜÂë£©
+ï¼ˆäº”ï¼‰æµ‹è¯•ssh keysæ˜¯å¦è®¾ç½®æˆåŠŸ  ä¸€è·¯å›è½¦å§ï¼ˆå‰é¢ç§é’¥ä¸è¦è®¾ç½®å¯†ç ï¼‰
       ssh -T git@github.com
-	  The authenticity of host 'github.com (192.30.252.129)' can't be established.
+      The authenticity of host 'github.com (192.30.252.129)' can't be established.
       RSA key fingerprint is 16:27:xx:xx:xx:xx:xx:4d:eb:df:a6:48.
-      Are you sure you want to continue connecting (yes/no)? yes #È·ÈÏÄãÊÇ·ñ¼ÌĞøÁªÏµ£¬ÊäÈëyes
-	  
-	  Hi xxx! You've successfully authenticated, but GitHub does not provide shell access. #³öÏÖ´Ê¾ä»°£¬ËµÃ÷ÉèÖÃ³É¹¦¡£
+      Are you sure you want to continue connecting (yes/no)? yes #ç¡®è®¤ä½ æ˜¯å¦ç»§ç»­è”ç³»ï¼Œè¾“å…¥yes
+      Hi xxx! You've successfully authenticated, but GitHub does not provide shell access. #å‡ºç°è¯å¥è¯ï¼Œè¯´æ˜è®¾ç½®æˆåŠŸã€‚
 
 	-----------------------------------------------------------------------------------------------------------  
-£¨Áù£©  ±¾µØÏîÄ¿Í¨¹ıSSH pushµ½GitHub  »òÕß ½«GitHub ÏîÄ¿Clone ÏÂÀ´
+ï¼ˆå…­ï¼‰  æœ¬åœ°é¡¹ç›®é€šè¿‡SSH pushåˆ°GitHub  æˆ–è€… å°†GitHub é¡¹ç›®Clone ä¸‹æ¥
 
-     1¡¢githubÉÏ´´½¨Ò»¸öÊ¾Àı²Ö¿â£¬¸´ÖÆ²Ö¿âsshÂ·¾¶¡£
+     1ã€githubä¸Šåˆ›å»ºä¸€ä¸ªç¤ºä¾‹ä»“åº“ï¼Œå¤åˆ¶ä»“åº“sshè·¯å¾„ã€‚
 	 
-	 2¡¢´´½¨±¾µØÎÄ¼ş¼Ğ cd  µ½ÎÄ¼ş¼ĞÏÂ
+	 2ã€åˆ›å»ºæœ¬åœ°æ–‡ä»¶å¤¹ cd  åˆ°æ–‡ä»¶å¤¹ä¸‹
 	 
-	     £¨1£©¡¢Èç¹ûÊÇÉÏ´«±¾µØÏîÄ¿µ½github ÉÏ ²½ÖèÈçÏÂ£º
+	     ï¼ˆ1ï¼‰ã€å¦‚æœæ˜¯ä¸Šä¼ æœ¬åœ°é¡¹ç›®åˆ°github ä¸Š æ­¥éª¤å¦‚ä¸‹ï¼š
 		 
-		        ´´½¨ºÃ±¾µØÏîÄ¿ test  cd testÎÄ¼ş¼ĞÏÂ
-	            git init   ³õÊ¼»¯
-		        git add .  Ìá½»µ±Ç°ÎÄ¼ş¼ĞÏÂËùÒÔÎÄ¼ş
-		        git commit -m "add  msg" ¸üĞÂĞÅÏ¢ÃèÊö£¨Ìá½»¼ÇÂ¼ËµÃ÷ £©
- 	            git remote add origin ¡®GitHub µÄ sshÂ·¾¶¡¯ 
-				git push -u origin master  £¨ÍÆËÍµ½GitHub ²Ö¿â£©
+		        åˆ›å»ºå¥½æœ¬åœ°é¡¹ç›® test  cd testæ–‡ä»¶å¤¹ä¸‹
+	                git init   åˆå§‹åŒ–
+		        git add .  æäº¤å½“å‰æ–‡ä»¶å¤¹ä¸‹æ‰€ä»¥æ–‡ä»¶
+		        git commit -m "add  msg" æ›´æ–°ä¿¡æ¯æè¿°ï¼ˆæäº¤è®°å½•è¯´æ˜ ï¼‰
+ 	                git remote add origin â€˜GitHub çš„ sshè·¯å¾„â€™ 
+			git push -u origin master  ï¼ˆæ¨é€åˆ°GitHub ä»“åº“ï¼‰
 				
-				Ë¢ĞÂ²Ö¿â¾Í¿ÉÒÔ¿´¼ûÏîÄ¿ÒÑ¾­ÉÏ´«µ½githubÁË
+			åˆ·æ–°ä»“åº“å°±å¯ä»¥çœ‹è§é¡¹ç›®å·²ç»ä¸Šä¼ åˆ°githubäº†
 -----------------------------------------------------------------------------------------------------------
-		£¨2£©¡¢¸üĞÂ²Ö¿âÏîÄ¿µ½±¾µØ
-		        ´´½¨ºÃ±¾µØÏîÄ¿ test  cd testÎÄ¼ş¼ĞÏÂ
-	            git init   ³õÊ¼»¯
-				git add .  Ìá½»µ±Ç°ÎÄ¼ş¼ĞÏÂËùÒÔÎÄ¼ş
-				git remote add origin ¡®GitHub µÄ sshÂ·¾¶¡¯ 
-		        git pull --rebase origin  master   £¨pull ²Ö¿âÏîÄ¿×îĞÂ°æ£©£¨ºÜÖØÒª ÒÔºóÃ¿´ÎÌá½»Ç°¶¼ÒªÖ´ĞĞµÄÃüÁî£©				
-				È»ºóĞŞ¸ÄÆäÖĞµÄÄ³¸öÎÄ¼şºó Ìá½»£ºgit push -u origin master  £¨ÍÆËÍµ½GitHub ²Ö¿â£©
+		ï¼ˆ2ï¼‰ã€æ›´æ–°ä»“åº“é¡¹ç›®åˆ°æœ¬åœ°
+		        åˆ›å»ºå¥½æœ¬åœ°é¡¹ç›® test  cd testæ–‡ä»¶å¤¹ä¸‹
+	                git init   åˆå§‹åŒ–
+			git add .  æäº¤å½“å‰æ–‡ä»¶å¤¹ä¸‹æ‰€ä»¥æ–‡ä»¶
+			git remote add origin â€˜GitHub çš„ sshè·¯å¾„â€™ 
+		        git pull --rebase origin  master   ï¼ˆpull ä»“åº“é¡¹ç›®æœ€æ–°ç‰ˆï¼‰ï¼ˆå¾ˆé‡è¦ ä»¥åæ¯æ¬¡æäº¤å‰éƒ½è¦æ‰§è¡Œçš„å‘½ä»¤ï¼‰				
+			ç„¶åä¿®æ”¹å…¶ä¸­çš„æŸä¸ªæ–‡ä»¶å æäº¤ï¼šgit push -u origin master  ï¼ˆæ¨é€åˆ°GitHub ä»“åº“ï¼‰
 		
-		£¨3£©
+		ï¼ˆ3ï¼‰
 		
-		£¨4£©
+		ï¼ˆ4ï¼‰
 		
 		
-		£¨5£©
+		ï¼ˆ5ï¼‰
 	
 	 
 
-1¡¢
+1ã€
 
 
 git init
