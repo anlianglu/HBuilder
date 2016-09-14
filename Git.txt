@@ -39,6 +39,7 @@ git@github.com:zhan520/HBuilder.git
 		        创建好本地项目 test  cd test文件夹下
 	                git init   初始化
 		        git add .  提交当前文件夹下所以文件
+		        git status
 		        git commit -m "add  msg" 更新信息描述（提交记录说明 ）
  	                git remote add origin ‘GitHub 的 ssh路径’ 
 			git push -u origin master  （推送到GitHub 仓库）
