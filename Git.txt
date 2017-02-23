@@ -1,3 +1,6 @@
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
 git@github.com:zhan520/HBuilder.git
 -----------------------------------------------------------------------------------------------------------
 git 安装我就不说了  一直next (注意配置git环境变量)
